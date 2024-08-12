@@ -1,0 +1,68 @@
+/*background image for our application*/
+body{
+    background-image: url(pokeballs.png);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:block;
+    justify-content: center;
+    min-height: none;
+}
+/*pokedex title name to help put it to the middle*/
+#pokedexTitle{
+    display:flex;
+    margin: 0 auto;
+}
+/* pokedex title */
+#dex{                                   
+    background-color: brown;
+    text-align: center;
+    font-size: 80px;
+    color: black;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0 auto;
+    display:inline-block;
+    
+}
+/*container for where our pokemon will be displayed*/
+.pokedexContainer{
+    background-color: brown;
+    min-height: 100vh;
+    max-height: min-content;
+    margin: 3%;
+    border: 7px solid;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#pokedex{
+    list-style-type: none;
+    padding: 0; /* Optional: Removes default padding */
+    margin: 0;  /* Optional: Removes default margin */
+    display: flex; 
+    flex-wrap: wrap; /* Ensure list items wrap to the next row */
+    justify-content: center;
+}
+.pokedexContainer li {
+    background-color: grey; /* Add a grey background */
+    padding: 20px; /* Add some padding around the image */
+    margin: 12px;  /* Add some spacing between items */
+    border: 2px solid;
+    border-radius: 10px; 
+    list-style-type: none; 
+    transition: transform 0.05s ease-in, box-shadow 0.3s ease, transform 0.2 ease-out;
+    text-align: center;
+    
+  }
+  
+  /* Ensure the images fit within their container */
+  .pokedexContainer img {
+    max-width: 100%; /* Ensure images are responsive and fit within the li */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image takes up only the required space */
+  }
+.pokedexContainer li:hover{
+    transform: scale(1.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}

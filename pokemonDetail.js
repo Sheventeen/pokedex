@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pokemonName) {
         // Simulate fetching Pokémon details
         document.getElementById("pokemonName").textContent = pokemonName;
-        document.getElementById("pokemonImage").src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png`;
+        document.getElementById("pokemonImage").src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${pokemonId}.png`;
     }
 
     document.getElementById("backButton").addEventListener("click", () => {

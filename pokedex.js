@@ -34,19 +34,20 @@ document.addEventListener('DOMContentLoaded', async()=>{
             newElement.setAttribute("data-url", pokeObj.url);
 
             pokedex.appendChild(newElement);
-
             newElement.addEventListener("click",onClick);
             
         })};
         console.log(pokeArr);
-        function onClick(event){
-            const itemName = event.currentTarget.name;
-            const itemUrl = event.currentTarget.getAttribute("data-url");
-            const itemId = event.currentTarget.id;
-            displayPokemon(itemName,itemId);
-        }
- 
 });
+
+
+
+function onClick(event){
+    const itemName = event.currentTarget.name;
+    const itemUrl = event.currentTarget.getAttribute("data-url");
+    const itemId = event.currentTarget.id;
+    displayPokemon(itemName,itemId);
+}
 
 function displayPokemon(pokemon, pokemonId){
     const url = `displayPokemon.html?name=${encodeURIComponent(pokemon)}&id=${encodeURIComponent(pokemonId)}`;

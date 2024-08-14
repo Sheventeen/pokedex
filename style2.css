@@ -17,10 +17,32 @@ body{
     border: solid 8px;
     justify-content: center;
     display:flex;
-    font-size: 100px;
+    font-size: 72px;
     text-align: center;
     border-radius: 100px;
-    padding: 1%;
-    
-   
+    padding: 1%;   
+}
+#pokemonDisplay{
+    background-color: brown;
+    min-height:100vh;
+    max-height: min-content;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 7px solid;
+    display:block;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+#pokemonDisplay img {
+    margin: 1%;
+    justify-content: center;
+    max-width: 40%;
+    height: auto;
+    display:inline;
+    border: solid 10px;
+  }
+#pokemonImage{
+
 }

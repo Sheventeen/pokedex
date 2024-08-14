@@ -12,7 +12,7 @@ const promiseArr = [];
 
 document.addEventListener('DOMContentLoaded', async()=>{
     
-    for (let pokemonId =1; pokemonId<152;pokemonId++){
+    for (let pokemonId =1; pokemonId<2;pokemonId++){
         const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
         promiseArr.push(fetch(url).then(res => {
             if(!res.ok) throw new Error("Error occured when trying to fetch pokemons api");
@@ -66,7 +66,8 @@ function onClick(event){
 
 function displayPokemon(pokemon, pokemonId){
     const url = `displayPokemon.html?name=${encodeURIComponent(pokemon)}&id=${encodeURIComponent(pokemonId)}`;
-    window.location.href = url;
+    //window.location.href = url;
+    window.open(url,'_blank').focus();
 }
 function searchPokemon(){
     const input = document.getElementById("searchBox").value.toLowerCase().trim();

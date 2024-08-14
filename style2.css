@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient(mintcream, grey);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    display:block;
+    justify-content: center;
+    min-height: none;
+}
+.textArea{
+    justify-content: center;
+    text-align: center;
+    display:flex;
+}
+
+#pokemonName{
+    border: solid 8px;
+    justify-content: center;
+    display:flex;
+    font-size: 100px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 1%;
+    
+   
+}

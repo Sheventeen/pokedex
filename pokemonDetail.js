@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (pokemonName) {
         // Simulate fetching Pokémon details
-        document.getElementById("pokemonName").textContent = pokemonName;
+        document.getElementById("pokemonName").textContent = pokemonName.toUpperCase();
         document.getElementById("pokemonImage").src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/shiny/${pokemonId}.png`;
     }
 

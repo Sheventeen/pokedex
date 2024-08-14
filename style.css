@@ -1,6 +1,6 @@
 /*background image for our application*/
 body{
-    background: linear-gradient(mintcream, grey);
+    background: linear-gradient(grey, black);
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
@@ -72,6 +72,7 @@ body{
 /* search button */
 #searchButton{
     justify-content: center;
+    background-color:aquamarine;
     margin: 1%;
     height: 60px;
     width: 80px;
@@ -83,6 +84,8 @@ body{
 /* button to select a pokemon at random */
 #randomButton{
     justify-content: center;
+    background-color:aquamarine;
+
     margin: 1%;
     height: 60px;
     width: 115px;
@@ -131,7 +134,6 @@ body{
     list-style-type: none; 
     transition: transform 0.0s ease-in, box-shadow 0.3s ease, transform 0.2 ease-out;
     text-align: center;
-    
   }
   
   /* Ensure the images fit within their container */

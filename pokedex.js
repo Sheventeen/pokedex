@@ -12,7 +12,7 @@ const promiseArr = [];
 
 document.addEventListener('DOMContentLoaded', async()=>{
     
-    for (let pokemonId =1; pokemonId<2;pokemonId++){
+    for (let pokemonId =1; pokemonId<152;pokemonId++){
         const url = `https://pokeapi.co/api/v2/pokemon/${pokemonId}`;
         promiseArr.push(fetch(url).then(res => {
             if(!res.ok) throw new Error("Error occured when trying to fetch pokemons api");
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', async()=>{
                 image: pokemon.sprites.front_default
             };
             pokeArr.push(pokeObj);
-
             const newElement = document.createElement("li");
             const pokemonImage = document.createElement("img");
 

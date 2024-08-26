@@ -16,10 +16,6 @@ document.addEventListener('DOMContentLoaded', async() => {
 
         document.getElementById("pokemonDisplay").style.backgroundColor = color;
     }
-
-    // document.getElementById("backButton").addEventListener("click", () => {
-    //     window.history.back();
-    // });
     async function getType(){
         let response = await fetch(url);
         if(!response.ok) throw new Error("Not valid");
